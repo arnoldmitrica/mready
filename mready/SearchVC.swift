@@ -96,10 +96,6 @@ class SearchVC: UIViewController {
         present(nvc, animated: true)
     }
     
-    @objc func cancelNvc(){
-        print("dada")
-        //nvc.popViewController(animated:false)
-    }
 }
 
 extension SearchVC: UITextFieldDelegate {

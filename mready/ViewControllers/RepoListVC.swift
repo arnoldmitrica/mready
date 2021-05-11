@@ -169,7 +169,7 @@ extension RepoListVC {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailVC = storyboard.instantiateViewController(identifier: "DetailVC") as DetailViewController
         //let item = repositories[indexPath.row]
-        detailVC.viewModel = RepositoryDetailViewModel(fullName: item.fullName, itemDescription: item.itemDescription ?? "No description", language: item.language, avatarOwnerURL: item.owner.avatarURL, ownerName: item.owner.login, forkCount: item.forksCount, stargazersCount: item.stargazersCount, updatedAt: item.updatedAt)
+        detailVC.viewModel = RepositoryDetailViewModel(fullName:item.fullName, itemDescription: item.itemDescription ?? "No description", language: item.language, avatarOwnerURL: item.owner.avatarURL, ownerName: item.owner.login, forkCount: item.forksCount, stargazersCount: item.stargazersCount, updatedAt: item.updatedAt)
         self.navigationController?.pushViewController(detailVC, animated: false)
     }
     

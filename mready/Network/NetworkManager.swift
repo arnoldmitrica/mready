@@ -27,7 +27,6 @@ class NetworkManager {
         }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            print(url)
             if let _ = error {
                 completed(Result.failure(.unableToComplete))
             }

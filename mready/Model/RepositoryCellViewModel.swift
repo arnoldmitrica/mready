@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RepositoryCellViewModel {
+class RepositoryCellViewModel {
     let full_name:String
     init(with model: Item){
         self.full_name = model.fullName
