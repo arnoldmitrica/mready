@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -88,7 +88,6 @@
 				96848295DC64A73DF96B5C42 /* Pods-mready.debug.xcconfig */,
 				8445945C570CCA2C7D063AEB /* Pods-mready.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,6 +97,27 @@
 				D36634706017EFB0639A9946 /* Pods_mready.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F46ED2EE264ADB7500710324 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB2A1026491D7A00A8688B /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F46ED2EF264ADBB400710324 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB2A452649462400A8688B /* GFAlertContainerView.swift */,
+				F4CB2A482649465400A8688B /* GFBodyLabel.swift */,
+				F4CB2A4B2649468700A8688B /* GFButton.swift */,
+				F4CB2A572649735B00A8688B /* GFTextField.swift */,
+				F4CB2A2226491FE400A8688B /* GFEmptyStateView.swift */,
+				F4CB2A252649208A00A8688B /* GFTitleLabel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F4CB29EC2649100A00A8688B = {
@@ -121,6 +141,8 @@
 		F4CB29F72649100A00A8688B /* mready */ = {
 			isa = PBXGroup;
 			children = (
+				F46ED2EF264ADBB400710324 /* Views */,
+				F46ED2EE264ADB7500710324 /* Network */,
 				F4CB2A41264945CD00A8688B /* ViewControllers */,
 				F4CB2A322649222100A8688B /* Model */,
 				F4CB2A2D2649219B00A8688B /* Utilities */,
@@ -128,22 +150,11 @@
 				F4CB29F82649100A00A8688B /* AppDelegate.swift */,
 				F4CB29FA2649100A00A8688B /* SceneDelegate.swift */,
 				F4CB29FC2649100A00A8688B /* SearchVC.swift */,
-				F4CB2A1026491D7A00A8688B /* NetworkManager.swift */,
-				F4CB2A1726491E5800A8688B /* RepoListVC.swift */,
-				F4CB2A1A26491F6400A8688B /* GFDataLoadingVC.swift */,
-				F4CB2A2226491FE400A8688B /* GFEmptyStateView.swift */,
-				F4CB2A252649208A00A8688B /* GFTitleLabel.swift */,
 				F4CB29FE2649100A00A8688B /* Main.storyboard */,
-				F4CB2A60264A9AE600A8688B /* DetailViewController.swift */,
 				F4CB2A042649100C00A8688B /* Assets.xcassets */,
 				F4CB2A062649100C00A8688B /* LaunchScreen.storyboard */,
 				F4CB2A092649100C00A8688B /* Info.plist */,
 				F4CB2A012649100A00A8688B /* mready.xcdatamodeld */,
-				F4CB2A452649462400A8688B /* GFAlertContainerView.swift */,
-				F4CB2A482649465400A8688B /* GFBodyLabel.swift */,
-				F4CB2A4B2649468700A8688B /* GFButton.swift */,
-				F4CB2A532649478200A8688B /* RepositoryCell.swift */,
-				F4CB2A572649735B00A8688B /* GFTextField.swift */,
 			);
 			path = mready;
 			sourceTree = "<group>";
@@ -179,7 +190,11 @@
 		F4CB2A41264945CD00A8688B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F4CB2A1726491E5800A8688B /* RepoListVC.swift */,
+				F4CB2A1A26491F6400A8688B /* GFDataLoadingVC.swift */,
 				F4CB2A42264945E300A8688B /* GFAlertVC.swift */,
+				F4CB2A60264A9AE600A8688B /* DetailViewController.swift */,
+				F4CB2A532649478200A8688B /* RepositoryCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
