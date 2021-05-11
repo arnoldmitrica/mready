@@ -7,14 +7,14 @@
 
 import Foundation
 
-class RepositoryCellViewModel {
+struct RepositoryCellViewModel {
     let full_name:String
     init(with model: Item){
         self.full_name = model.fullName
     }
 }
 
-class RepositoryDetailViewModel {
+struct RepositoryDetailViewModel {
     let fullName:String
     let itemDescription:String
     let language:String?
