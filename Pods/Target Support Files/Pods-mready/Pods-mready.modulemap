@@ -1,0 +1,6 @@
+framework module Pods_mready {
+  umbrella header "Pods-mready-umbrella.h"
+
+  export *
+  module * { export * }
+}
